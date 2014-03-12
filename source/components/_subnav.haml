@@ -1,0 +1,8 @@
+%nav#subnav
+  %ul.nav
+    - if current_page.data.has_hero
+      %li.hero<>
+        = link_to 'Top', "#hero"
+    - current_page.data.sections.each do |s|
+      %li<>
+        = link_to s, "#section-#{ s.dasherize }"

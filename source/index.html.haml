@@ -1,0 +1,25 @@
+---
+title: "TeSLA: The World's Smallest Laptop Adapter, by FINsix"
+js_file: views/tesla
+has_hero: true
+sections:
+  - Features
+  - Colors
+  - Press
+  - Specs & FAQs
+adapter_colors:
+  - Green
+  - White
+  - Purple
+  - Grey
+  - Blue
+  - Red
+---
+
+%main
+  = partial 'tesla/hero'
+  = partial 'components/subnav'
+
+  - current_page.data.sections.each do |s|
+    %section{ id: "section-#{ s.dasherize }" }
+      = partial "tesla/sections/#{ s.underscore }"

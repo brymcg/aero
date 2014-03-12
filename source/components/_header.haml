@@ -1,0 +1,19 @@
+%header
+  .wrapper
+    %h1
+      = link_to '/index.html' do
+        %span FINsix
+        = partial 'assets/images/finsix-logo', engine: :haml
+    %nav
+      %ul
+        %li<>
+          = link_to 'Bolt', '/index.html', class: :tesla, relative: true
+        -#%li<>
+          = link_to 'LEDD', '/led-driver/index.html', class: 'led-driver', relative: true
+        %li<>
+          = link_to 'Power Platform', '/power-platform/index.html', class: 'power-platform', relative: true
+        %li<>
+          = link_to 'Company', '/company/index.html', class: :company, relative: true
+
+        %li.pre-order<>
+          = link_to "Pre-order <strong>TeSLA</strong>", "#pre-order"

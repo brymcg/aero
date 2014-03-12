@@ -1,0 +1,45 @@
+body.index #section-press
+  background: #111
+  color: #ddd
+
+  a
+    color: $blue
+
+    &:hover
+      color: lighten( $blue, 10% )
+
+  .wrapper
+    > h1
+      border-bottom: 2px solid #333
+      color: white
+      font:
+        family: $merriweather
+        style: italic
+      margin: 0 0 1em
+      padding: 0 0 0.5em
+      text-align: center
+
+  article
+    width: 50%
+    +box-sizing( border-box )
+
+  .quotes
+    padding: 0 1.25em 0 0
+
+    blockquote
+      margin: 0 0 3em
+      
+      p
+        font:
+          size: 1.25em
+          family: $merriweather
+          weight: 300
+
+        &:last-of-type
+          margin-bottom: 0.2em
+
+      footer
+        color: #666
+
+  .awards
+    padding: 0 0 0 1.25em

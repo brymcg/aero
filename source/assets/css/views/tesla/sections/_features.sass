@@ -1,0 +1,35 @@
+#section-features
+  .wrapper
+    > h1
+      display: none
+
+  article
+    display: inline-block
+    margin: 0 0 4em
+    padding: 0 1.875em 0 6em
+    position: relative
+    vertical-align: top
+    width: 33.333%
+    +box-sizing( border-box )
+    @media screen and ( max-width: 1279px )
+      width: 50%
+
+
+    &:nth-last-child(-n+3)
+      margin: 0
+
+    &:before
+      color: #999
+      content: $icon-check-circle
+      font:
+        family: $finsix-icons
+        size: 5em
+      line-height: 1
+      position: absolute
+      top: 0
+      left: 0
+
+    h1
+      font:
+        size: 1.875em
+      margin: 0 0 0.5em

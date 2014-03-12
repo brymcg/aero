@@ -1,0 +1,74 @@
+body.index #hero
+  background: #323033 asset-data-uri( "tesla/pencil.jpg" ) no-repeat 50%
+    size: auto 100%
+  color: white
+  font-family: $roboto
+  padding: 10em 0 9em
+  @media screen and ( max-width: 1279px )
+    padding: 7em 0 4em
+  @media screen and ( max-width: 1030px )
+    padding: 4em 0 2em
+
+  h1
+    font:
+      size: 4.5em
+      weight: 700
+    margin: 0
+
+  h2
+    font:
+      size: 2.25em
+      weight: 100
+    margin: 0 0 0.75em
+    width: 60%
+
+  .pre-order
+    background: $orange
+    border-radius: 5px
+    color: lighten( $orange, 40% )
+    display: inline-block
+    font:
+      size: 1.875em
+      weight: 300
+    line-height: 1.5
+    margin: 0 0 4em
+    padding: 0.25em 1em 0.4em
+
+    &:after
+      content: $icon-right-angle
+      display: inline-block
+      font:
+        family: $finsix-icons
+        size: 0.666em
+      margin: 0 0 0 0.75em
+      vertical-align: middle
+
+    &:hover
+      background: lighten( $orange, 5% )
+      color: white
+
+  .play-video
+    color: rgba( white, 0.8 )
+    display: block
+    font:
+      size: 1.25em
+      weight: 400
+
+    &:before
+      background: rgba( white, 0.3 )
+      border-radius: 3px
+      color: rgba( black, 0.4 )
+      content: $icon-play
+      display: inline-block
+      font:
+        family: $finsix-icons
+      margin: 0 0.75em 0 0
+      padding: 0.25em 1em
+      vertical-align: middle
+
+    &:hover
+      color: white
+
+      &:before
+        background: rgba( white, 0.5 )
+        color: rgba( black, 0.6 )

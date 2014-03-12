@@ -1,0 +1,104 @@
+$logo-width: 150px
+$logo-height: $logo-width * 0.2150920063
+
+body > header
+  background-color: rgba( white, 0.95 )
+  left: 0
+  margin: 0
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 9999
+  +transition( background-color 250ms, margin-top 250ms )
+
+  .wrapper
+    padding: 0 $logo-width + 40
+
+  h1
+    bottom: 0
+    font-size: 1em
+    height: $logo-height
+    left: 20px
+    line-height: 1
+    margin: auto !important
+    padding: 0
+    position: absolute
+    top: 0
+
+    span
+      display: none
+
+    svg
+      height: $logo-height
+      vertical-align: middle
+      width: $logo-width
+
+      path
+        +transition( fill 250ms )
+
+      #icon path
+        fill: $orange
+
+      #wordmark path
+        fill: $finsix-charcoal
+
+    a:hover svg
+      #wordmark path
+        fill: $orange
+
+  nav
+    text-align: center
+
+    a
+      display: block
+      padding: 1em 1.25em
+      color: #777
+      +box-sizing( border-box )
+
+      &:hover
+        color: $orange
+        border-top-color: $orange
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+    li
+      display: inline-block
+      margin: 0
+      padding: 0
+
+      &.pre-order
+        bottom: 0
+        height: 2.5em
+        margin: auto
+        position: absolute
+        right: 20px
+        top: 0
+
+        a
+          background: $orange
+          border-radius: 5px
+          color: lighten( $orange, 40% )
+          font-weight: 300
+          height: 2.5em
+          padding: 0.5em 1.25em
+
+          strong
+            color: lighten( $orange, 45% )
+            font-weight: 500
+
+          &:hover,
+          &:hover strong
+            color: white
+
+          &:hover
+            background: lighten( $orange, 5% )
+
+body.index          > header nav a.tesla,
+body.led-driver     > header nav a.led-driver,
+body.company        > header nav a.company,
+body.power-platform > header nav a.power-platform
+  color: #222
+  font-weight: 700

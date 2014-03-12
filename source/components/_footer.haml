@@ -1,0 +1,12 @@
+%footer
+  .container
+    %nav
+      %ul
+        - data.navigation.each do | n |
+          %li<>
+            = link_to n.name, n.path, class: n.name.dasherize
+            - sections = sitemap.find_resource_by_path(n.path).metadata[:page]['sections']
+            - if sections
+              %ul
+                - sections.each do | s |
+                  %li= link_to s, "#{ n.path }#section-#{ s.dasherize }"

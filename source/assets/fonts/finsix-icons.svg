@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="finsix-icons" horiz-adv-x="1000" >
+<font-face font-family="finsix-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="ok-circled" unicode="&#xe802;" d="m0 350q0 95 37 182t100 149t150 100t182 37t182-37t149-100t100-149t37-182t-37-182t-100-150t-149-100t-182-37t-182 37t-150 100t-100 150t-37 182z m177-31q0-22 15-38l153-153q14-15 38-15q22 0 37 15l315 315q16 16 16 38t-16 37t-38 15t-37-15l-277-278l-116 116q-15 15-37 15t-38-15q-15-16-15-37z" horiz-adv-x="937.5" />
+<glyph glyph-name="right-open" unicode="&#xe800;" d="m0 0q0 25 18 43l305 304l-305 304q-18 18-18 44t18 43t44 18t43-18l390-391l-390-391q-19-18-43-18t-44 18q-18 18-18 44z" horiz-adv-x="495.1" />
+<glyph glyph-name="up" unicode="&#xe803;" d="m0 354q0 26 18 44l391 390l390-390q18-18 18-44q0-26-18-43q-18-18-43-18t-43 18l-243 243v-642q0-25-18-43t-43-18q-26 0-44 18t-17 43v642l-244-243q-18-18-43-18t-43 18q-18 17-18 43z" horiz-adv-x="817.4" />
+<glyph glyph-name="play" unicode="&#xe801;" d="m0 11v677q0 39 22 52t53-8l564-349q20-14 20-33q0-9-5-18t-10-12l-5-4l-564-349q-31-20-53-7t-22 51z" horiz-adv-x="658.7" />
+</font>
+</defs>
+</svg>

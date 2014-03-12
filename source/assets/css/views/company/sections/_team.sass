@@ -1,0 +1,38 @@
+$team-picture-width: 120px
+#section-team
+  article
+    display: inline-block
+    margin: 0 0 3em
+    min-height: $team-picture-width
+    padding: 1.25em 1.25em 0 ( $team-picture-width + 20 )
+    position: relative
+    vertical-align: top
+    width: 33.333%
+    +box-sizing( border-box )
+
+    img
+      border: 4px solid #ddd
+        radius: $team-picture-width / 2
+      display: block
+      height: $team-picture-width
+      left: 0
+      position: absolute
+      top: 0
+      width: $team-picture-width
+      +box-sizing( border-box )
+
+    h1
+      color: #222
+      font:
+        size: 1.5em
+        weight: 500
+      line-height: 1.25
+      margin: 0 0 0.125em
+
+    h2
+      color: #666
+      font:
+        size: 1em
+        weight: 300
+      line-height: 1.5
+      margin: 0
