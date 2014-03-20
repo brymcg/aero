@@ -1,13 +1,8 @@
 body #subnav
-  background: rgba( #eee, 0.95 )
   margin: 0 0 -3.5em
   position: relative
   z-index: 9999
   +transition( all 250ms )
-
-  &.loaded
-    +animation( none )
-
 
   ul
     list-style: none
@@ -19,54 +14,7 @@ body #subnav
     margin: 0
 
     a
-      color: #777
       display: block
       font-weight: 400
       padding: 1em 1.25em
       +box-sizing( border-box )
-
-      &:hover
-        color: $orange
-
-    &.active a
-      background: rgba( #999, 0.2 )
-      color: #222
-      font-weight: 600
-
-    &.hero,
-    &.pre-order
-      bottom: 0
-      display: none
-      margin: auto
-      position: absolute
-      top: 0
-      +animation( fade-in 250ms )
-
-    &.hero
-      left: 20px
-      height: 1.5em
-
-      a
-        padding: 0
-
-        &:before
-          content: $icon-up-arrow
-          display: inline-block
-          font-family: $finsix-icons
-          margin: 0 0.5em 0 0
-          position: relative
-          top: -0.05em
-
-      &.active a
-        background: transparent
-
-  &.affix,
-  &.affix-bottom
-    left: 0
-    position: fixed
-    right: 0
-    top: 3.5em
-
-    li.hero,
-    li.pre-order
-      display: block

@@ -1,17 +1,16 @@
 ---
-title: "TeSLA: The World's Smallest Laptop Adapter, by FINsix"
-js_file: views/tesla
-has_hero: true
+title: "Aero Financials"
+has_hero: false
 sections:
-  - One
-  - Two
-  - Three
+  - Pitch
+  - Services
+  - Pricing
 ---
 
 %main
-  = partial 'tesla/hero'
-  = partial 'components/subnav'
+  = partial 'front/hero'
+
 
   - current_page.data.sections.each do |s|
     %section{ id: "section-#{ s.dasherize }" }
-      = partial "tesla/sections/#{ s.underscore }"
+      = partial "front/sections/#{ s.underscore }"
