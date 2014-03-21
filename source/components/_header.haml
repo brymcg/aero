@@ -1,8 +1,18 @@
 %header
   .wrapper
     %h1
-      Aero Financial Partners
-        
+      %span Aero Financial Partners
+    %nav
+      %ul
+        %li<>
+          = link_to 'Home', '/index.html', class: :home, relative: true
+        %li<>
+          = link_to 'About', '/index.html', class: 'about', relative: true
+        %li<>
+          = link_to 'Contact', '/index.html', class: 'contact', relative: true
+        %li<>
+          = link_to 'Blog', '/index.html', class: 'blog', relative: true
+
 
 
 

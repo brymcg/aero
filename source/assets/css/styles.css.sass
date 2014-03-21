@@ -10,10 +10,22 @@
 @import settings/queries
 @import settings/keyframes
 
+*:focus
+  outline: none
+
 body
   margin: 0
   padding: 0
   background: white
+
+a
+  position: relative
+  cursor: pointer
+  text-decoration: none
+  color: $gray_blue
+
+  &:active
+    top: 1px
 
 body,
 input,
@@ -39,9 +51,8 @@ main
   min-height: 3.75em
 
   > section
-    padding: 1em 0
+    padding: 0.5em 0
     position: relative
-
 
 
 .wrapper
@@ -55,6 +66,7 @@ main
     width: 1030px
   @media screen and ( max-width: 1030px )
     width: 760px
+
 
 @import components/header
 @import components/subnav

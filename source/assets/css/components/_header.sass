@@ -1,10 +1,35 @@
+$hd_pad: 5px
+$logo-width: 10px
+
 body > header
-  background-color: rgba( white, 0.95 )
-  left: 0
-  margin: 0
-  position: fixed
-  right: 0
-  top: 0
-  z-index: 9999
 
   h1
+    margin: 0
+    padding-top: $hd_pad
+    padding-bottom: $hd_pad
+    color: $dark_blue
+    position: absolute
+
+  nav
+    position: absolute
+    right: 40px
+
+    a
+      display: block
+      padding: 1em 1.25em
+      color: $dark_blue
+      +box-sizing( border-box )
+
+      &:hover
+        color: $yellow
+        border-top-color: $yellow
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+    li
+      display: inline-block
+      margin: 0
+      padding: 0
