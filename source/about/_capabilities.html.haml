@@ -1,2 +1,15 @@
-.wrapper
-  %h1 Capabilities
+%section#section-capabilities
+  .wrapper
+    %h1 Capabilities
+    
+    %p
+      Financial and business operations have come a long way since T accounts and physical ledgers. The integration of modern software tools and data automation can eliminate nearly all of the manual content and human error in your financial processes. That is why we combine traditional financial and accounting expertise with capabilities in modern software development, database architecture and ERP management. 
+
+    - data.skills.each do | skill |
+      %article{ class: "#{skill.title}"}<>
+        %h4.title= skill.title
+        .desc
+          :markdown
+            #{skill.description}
+
+

@@ -1,0 +1,15 @@
+- id: sdev
+  title: Software Development
+  description: "Despite the proliferation of cloud-based financial packages, it can be extremely useful to design and deploy custom applications and tools. We have expertise in a variety of modern development tools, including Ruby on Rails and PHP."
+- id: dbmg
+  title: Database Management
+  description: "Whether interacting with a third party system or crafting your own, it is likely that all of your business information will be stored and manipulated in some type of database. The ability to manage data, write queries and architect a database is critical to any operation."
+- id: erpm
+  title: ERP Management
+  description: "While Quickbooks is still the most common ERP for small business, there are a variety of other options that are gaining popularity. We can help you with all versions of Quickbooks as well as Xero, Netsuite and Wave "
+- id: erpd
+  title: ERP Development
+  description: "Many of the cloud-based financial software companies have opened up their APIs to third party developers. This allows us to develop custom tools that plug directly into your general ledger."
+- id: sfdev
+  title: Salesforce Development
+  description: "Salesforce set the original standard for allowing third party development. We can help you customize Salesforce as well as automate things like order fulfilment."
