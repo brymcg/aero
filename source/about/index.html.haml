@@ -1,0 +1,13 @@
+---
+title: "Aero About"
+has_hero: false
+sections:
+  - Capabilities
+  - Personnel
+---
+
+%main
+
+  - current_page.data.sections.each do |s|
+    %section{ id: "section-#{ s.dasherize }" }
+      = partial "#{ s.underscore }"

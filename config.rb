@@ -47,19 +47,23 @@ configure :build do
   # }
 end
 
-#activate :deploy do |deploy|
-#  deploy.build_before = true
-#  deploy.method = :git
-#end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method = :rsync
-  deploy.host   = "brymcg.com"
-  deploy.path   = "/var/www/brymcg/html/aero"
-  # Optional Settings
-  deploy.user  = "bryan" # no default
-  # deploy.port  = 5309 # ssh port, default: 22
-  # deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = "-rltgoDvzO --no-p --del" # add custom flags, default: -avz
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method = :rsync
+    deploy.host   = "brymcg.com"
+    deploy.path   = "/var/www/brymcg/html/aero"
+    # Optional Settings
+    deploy.user  = "bryan" # no default
+    # deploy.port  = 5309 # ssh port, default: 22
+    # deploy.clean = true # remove orphaned files on remote host, default: false
+    # deploy.flags = "-rltgoDvzO --no-p --del" # add custom flags, default: -avz
+  end
+else
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method = :git
+  end
 end

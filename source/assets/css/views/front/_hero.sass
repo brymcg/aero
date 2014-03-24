@@ -10,13 +10,34 @@ body.index #hero
 
     h1
       font:
-        size: 2em
-        weight: 400
+        size: 1.35em
+        weight: 300
       margin: 0
       padding: 0
       color: white
-      letter-spacing: -1px
+      letter-spacing: -.8px
       position: absolute
-      bottom: 40px
+      bottom: 80px
       right: 30px
       text-align: right
+
+
+    .email
+      background: $yellow
+      border-radius: 5px
+      color: $dark_blue
+      display: inline-block
+      font:
+        size: 1.2em
+        weight: 500
+      line-height: 1.5
+      margin: 0 0 1em
+      padding: 0.25em 1em 0.4em
+      position: absolute
+      bottom: 0px
+      right: 30px
+
+      &:hover
+        background: lighten( $yellow, 5% )
+        color: white
+

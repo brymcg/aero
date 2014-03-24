@@ -7,9 +7,9 @@
         %li<>
           = link_to 'Home', '/index.html', class: :home, relative: true
         %li<>
-          = link_to 'About', '/index.html', class: 'about', relative: true
+          = link_to 'About', '/about/index.html', class: 'about', relative: true
         %li<>
-          = link_to 'Contact', '/index.html', class: 'contact', relative: true
+          = mail_to 'info@aerofinancialpartners.com', 'Contact', class: 'email', target: '_blank'
         %li<>
           = link_to 'Blog', '/index.html', class: 'blog', relative: true
 

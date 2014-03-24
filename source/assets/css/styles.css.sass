@@ -14,18 +14,19 @@
   outline: none
 
 body
-  margin: 0
+  margin: 0 0 0
   padding: 0
-  background: white
+  background-color: rgba($lightest_blue, .05)
 
+  &.index,
+  &.company
+    margin-top: 0
 a
   position: relative
   cursor: pointer
   text-decoration: none
   color: $gray_blue
 
-  &:active
-    top: 1px
 
 body,
 input,
@@ -33,6 +34,15 @@ button,
 select,
 textarea
   font: 400 16px/1.5 $open-sans
+
+
+h1
+  color: $yellow
+  font-size: 1.5em
+
+h4
+  margin: 0 0 0.5em 0
+  font-weight: 50
 
 p,
 ul,
@@ -72,4 +82,5 @@ main
 @import components/subnav
 @import components/footer
 @import views/front
+@import views/about
 
