@@ -1,0 +1,24 @@
+---
+title: "Aero Blog"
+has_hero: false
+---
+
+%main
+  %section{ id: "section-blogindex" }
+    .wrapper
+      %h2
+        Recent Posts
+
+      - page_articles.each do |a|
+        %article.blogsumm
+          %h4.name
+            = link_to a.title, a
+          .date
+            = a.date.strftime('%b %e, %Y')
+          .text
+            = a.summary(500)
+          .link
+            = link_to "Read on...", a.title
+
+
+

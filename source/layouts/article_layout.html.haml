@@ -1,0 +1,13 @@
+= wrap_layout :layout do
+  %main
+    %section{ id: "section-article" }
+      .wrapper
+
+        %h3
+          = current_page.data.title
+
+        .article-date
+          = current_page.data.date.strftime('%b %e, %Y')
+
+        .article-text
+          = yield

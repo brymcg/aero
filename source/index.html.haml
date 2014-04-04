@@ -2,14 +2,12 @@
 title: "Aero Financials"
 has_hero: false
 sections:
+  - Hero
   - Pitch
   - Services
 ---
 
 %main
-  = partial 'front/hero'
-
-
   - current_page.data.sections.each do |s|
     %section{ id: "section-#{ s.dasherize }" }
-      = partial "front/sections/#{ s.underscore }"
+      = partial "front/#{ s.underscore }"

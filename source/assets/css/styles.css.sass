@@ -14,6 +14,7 @@
   outline: none
 
 body
+  margin: 50px 0 0
   margin: 0 0 0
   padding: 0
   background-color: rgba($lightest_blue, .05)
@@ -34,11 +35,13 @@ button,
 select,
 textarea
   font: 400 16px/1.5 Arial, Helvetica, sans-serif
+  color: #34495e
 
 
-h1
+h2
   color: $yellow
   font-size: 1.5em
+
 
 
 h4
@@ -59,25 +62,41 @@ ul,
 ol
   padding: 0 0 0 1.25em
 
-main
-  min-height: 3.75em
-
-  > section
-    padding: 0.5em 0
-    position: relative
+  
 
 
 .wrapper
   margin: 0 auto
   padding: 0 20px
   position: relative
-  width: 1280px
+  max-width: 1280px
   +box-sizing( border-box )
   +clearfix
   @media screen and ( max-width: 1279px )
     width: 1030px
   @media screen and ( max-width: 1030px )
     width: 760px
+
+.wrapper
+  @extend %wrapper
+
+main
+  min-height: 5em
+
+  > section:first-child
+    margin-top: 60px
+
+  > h1,
+  > section > h1
+    @extend %wrapper
+    font-weight: 600
+    padding-bottom: 0.25em
+    border-bottom: 2px solid $lightest_blue
+    margin-bottom: 1em
+    text-align: center
+
+  > section
+    position: relative
 
 
 @import components/header
