@@ -16,6 +16,10 @@ configure :development do
   set :sass, line_numbers: true
 end
 
+activate :blog do |blog|
+  # set options on blog
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
