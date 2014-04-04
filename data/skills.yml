@@ -13,3 +13,6 @@
 - id: sfdev
   title: Salesforce Development
   description: "Salesforce set the original standard for allowing third party development. We can help you customize Salesforce as well as automate things like order fulfilment."
+- id: model
+  title: Financial Modeling
+  description: "Even relatively simple businesses can feature complex relationships between cash flow, income and the balance sheet. We can help illustrate the economic levers of your company."

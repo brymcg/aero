@@ -54,7 +54,7 @@ when 'production'
     deploy.build_before = true
     deploy.method = :rsync
     deploy.host   = "brymcg.com"
-    deploy.path   = "/var/www/brymcg/html/aero"
+    deploy.path   = "/var/www/aero/html"
     # Optional Settings
     deploy.user  = "bryan" # no default
     # deploy.port  = 5309 # ssh port, default: 22
