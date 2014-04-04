@@ -9,6 +9,7 @@ set :haml,        format: :html5, attr_wrapper: '"'
 activate :directory_indexes
 activate :relative_assets
 set :relative_links, true
+page "blog/articles/*", :layout => :article_layout
 
 configure :development do
   activate :livereload, no_swf: true
@@ -17,7 +18,9 @@ configure :development do
 end
 
 activate :blog do |blog|
-  # set options on blog
+  blog.prefix = "blog"
+  blog.permalink = ":title.html"
+  blog.sources = "articles/:title.html"
 end
 
 configure :build do
