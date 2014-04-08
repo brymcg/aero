@@ -15,6 +15,9 @@ configure :development do
   activate :livereload, no_swf: true
   set :debug_assets, true
   set :sass, line_numbers: true
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
 end
 
 activate :blog do |blog|
@@ -24,12 +27,20 @@ activate :blog do |blog|
   blog.tag_template = "blog/tag.html"
 end
 
+# Activate google-analytics extension
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-49812428-1'
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
   activate :gzip
   activate :asset_hash, :exts =>  %w(.css .gif .png .svg .jpg .jpeg .js)
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-XXXXXXX-X'
+  end
   # # Only necessary when re-building from scratch or changing favicon
   # activate :favicon_maker, :icons => {
   #   "assets/images/icon-196^2.png" => [

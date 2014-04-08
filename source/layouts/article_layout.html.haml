@@ -6,6 +6,9 @@
         %h3
           = current_page.data.title
 
+        .index_link
+          = link_to "Back to main page", '/blog/index.html'
+
         .article-date
           = current_page.data.date.strftime('%b %e, %Y')
 

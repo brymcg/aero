@@ -10,3 +10,4 @@ gem 'therubyracer', platform: :ruby
 gem 'bourbon'
 gem "middleman-blog"
 gem 'nokogiri'
+gem "middleman-google-analytics"
