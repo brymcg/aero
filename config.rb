@@ -21,6 +21,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title.html"
   blog.sources = "articles/:title.html"
+  blog.tag_template = "blog/tag.html"
 end
 
 configure :build do
