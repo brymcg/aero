@@ -6,7 +6,7 @@
 
     - data.skills.each do | skill |
       %article{ class: "#{skill.title}"}<>
-        %h4.title= skill.title
+        %h3.title= skill.title
         .desc
           :markdown
             #{skill.description}
