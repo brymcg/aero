@@ -1,8 +1,6 @@
 %section#section-services
-  .wrapper
-    %h2 Services
-      
-
+  %h1 Services
+  .wrapper     
     - data.services.each do | i |
       %article.service{ class: i.title.downcase }<>
         %h4= i.title

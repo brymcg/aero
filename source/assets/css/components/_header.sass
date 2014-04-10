@@ -3,7 +3,17 @@ $logo-width: 10px
 
 body > header
   z-index: 9999
+  top: 0
+  left: 0
+  right: 0
+  margin: 0
 
+  .wrapper
+    padding: 0 20px
+    height: 40px
+    @media only screen and ( max-width: 720px )
+      padding-right: 20px
+  
   h1
     margin: 0
     padding-top: $hd_pad
@@ -14,15 +24,20 @@ body > header
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 
   nav
-    position: absolute
-    right: 40px
+    text-align: right
+    line-height: 1
 
     a
       display: block
-      padding: 1em 1.25em
+      padding: 1em
       color: $dark_blue
       border-top: 2px solid transparent
       +box-sizing( border-box )
+      +transition-property( color, border-color )
+      +transition-duration( 250ms )
+      @media only screen and ( min-width: 721px )
+        padding: 0.75em 1em 1em
+        border-top: 2px solid transparent
 
       &:hover
         color: $yellow
@@ -37,6 +52,8 @@ body > header
       display: inline-block
       margin: 0
       padding: 0
+      @media only screen and ( max-width: 720px )
+        display: block
 
 body.index          > header nav a.home,
 body.about        > header nav a.about,

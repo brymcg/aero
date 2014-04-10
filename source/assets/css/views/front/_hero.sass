@@ -1,42 +1,49 @@
-body.index #hero
-  margin-bottom: 20px
+body.index #section-hero
+  border-top 10px solid red
+  padding: 6em 0 8em
+  background: asset-data-uri( "bike3_crop.jpg" ) no-repeat 10%
+  @media only screen and ( max-height: 640px ), only screen and ( max-width: 720px )
+    padding: 3em 0 4em
+  min-height: 15em
+    
   .wrapper
-    background: asset-data-uri( "bike3_crop.jpg" ) no-repeat 50%
-      size: 100% auto
-    @media screen and ( max-width: 1030px )
-      padding: 7em 0 6em
-    min-height: 20em
+    > div
+      float: right
+      width: 47.5%
+      margin: 0 5% 0 0
+      margin-right: 0
+      @media only screen and ( max-width: 840px )
+        float: none
+        width: auto
+        margin: 0
 
-    h1
+    h4
+      text-align: right
       font:
         size: 1.35em
         weight: 200
       margin: 0
       padding: 0
       color: white
-      letter-spacing: -.5px
-      position: absolute
-      bottom: 80px
-      right: 30px
-      text-align: right
-
+      margin-top: 0
+      @media only screen and ( max-width: 840px )
+        margin-top: 1em
 
     .email
-      background: $yellow
-      border-radius: 5px
-      color: $dark_blue
-      display: inline-block
-      font:
-        size: 1.2em
-        weight: 500
-      line-height: 1.5
-      margin: 0 0 1em
-      padding: 0.25em 1em 0.4em
-      position: absolute
-      bottom: 0px
-      right: 30px
+      text-align: right
+      a
+        display: inline-block
+        background: $yellow
+        border-radius: 5px
+        color: $dark_blue
+        font:
+          size: 1.2em
+          weight: 500
+        padding: 0.5em 1.5em
+        margin-top: 1em
 
-      &:hover
-        background: lighten( $yellow, 5% )
-        color: white
+        &:hover
+          color: white
+          background: lighten( $yellow, 5% )
+        
 

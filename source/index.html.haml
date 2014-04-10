@@ -9,5 +9,4 @@ sections:
 
 %main
   - current_page.data.sections.each do |s|
-    %section{ id: "section-#{ s.dasherize }" }
-      = partial "front/#{ s.underscore }"
+    = partial "front/#{ s.underscore }"

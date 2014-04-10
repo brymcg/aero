@@ -1,0 +1,19 @@
+%main
+  %section{ id: "section-tagindex" }
+    .wrapper
+
+      .posts
+        %h2
+          Entries Tagged: #{tagname.capitalize}
+
+        - page_articles.each do |a|
+          %article.blogsumm
+            %h4.name
+              = link_to a.title, a
+            .date
+              = a.date.strftime('%b %e, %Y')
+            .text
+              = a.summary(500)
+            .link
+              = link_to "Read on...", a.title
+

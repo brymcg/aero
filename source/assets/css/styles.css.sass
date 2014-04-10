@@ -14,20 +14,22 @@
   outline: none
 
 body
-  margin: 50px 0 0
   margin: 0 0 0
   padding: 0
   background-color: rgba($lightest_blue, .05)
 
-  &.index,
-  &.company
-    margin-top: 0
-a
+a,
+button
   position: relative
   cursor: pointer
   text-decoration: none
-  color: $gray_blue
+  &:active
+    top: 1px
 
+a
+  color: $gray_blue
+  &:hover
+    color: $yellow
 
 body,
 input,
@@ -37,17 +39,6 @@ textarea
   font: 400 16px/1.5 Arial, Helvetica, sans-serif
   color: #34495e
 
-
-h2
-  color: $yellow
-  font-size: 1.5em
-
-
-
-h4
-  margin: 0 0 0.5em 0
-  font-weight: 50
-  color: darken($gray_blue, 10%)
 
 p,
 ul,
@@ -62,44 +53,79 @@ ul,
 ol
   padding: 0 0 0 1.25em
 
-  
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font:
+    family: Arial
+    weight: 500
+  &:first-child
+    margin-top: 0
+
+h1
+  font-size: 2.5em
+  line-height: 1.125
+  margin: 1.5em 0 0.75em
+  @media only screen and ( max-width: 680px )
+    font-size: 3em
+
+h2
+  font-size: 2em
+  line-height: 1.25
+  margin: 1.5em 0 1em
+  @media only screen and ( max-width: 680px )
+    font-size: 2.5em
+
+h3
+  font-size: 1.5em
+  line-height: 1.25
+  margin: 1.5em 0 1em
+  @media only screen and ( max-width: 680px )
+    font-size: 1.5em
 
 
-.wrapper
+
+%wrapper
   margin: 0 auto
   padding: 0 20px
   position: relative
   max-width: 1280px
   +box-sizing( border-box )
   +clearfix
-  @media screen and ( max-width: 1279px )
-    width: 1030px
-  @media screen and ( max-width: 1030px )
-    width: 760px
+  @media only screen and ( max-width: 720px )
+    padding: 0 20px
+  @media only screen and ( max-height: 640px )
+    max-width: 990px
+    padding: 0 20px
 
 .wrapper
   @extend %wrapper
 
 main
   min-height: 5em
+  +animation( fade-in 600ms 200ms both )
+
 
   > section:first-child
-    margin-top: 60px
+    margin-top: 15px
 
   > h1,
   > section > h1
     @extend %wrapper
     padding-bottom: 0.25em
-    border-bottom: 2px solid $lightest_blue
     margin-bottom: 1em
     text-align: center
 
   > section
+    padding: 1em 0
     position: relative
 
 
 @import components/header
-@import components/subnav
 @import components/footer
 @import views/front
 @import views/about
