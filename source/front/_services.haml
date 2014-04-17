@@ -2,5 +2,14 @@
   %h1 Services
   .wrapper     
     - data.services.each do | i |
-      %article.service{ class: i.title.downcase }<>
-        %h3= i.title
+      %article.service{ class: i.group.downcase }<>
+        %h2= i.group
+        %ul
+          - i.services.each do | s |
+            %li<>
+              #{s}
+
+        %p
+          #{i.summ}
+
+

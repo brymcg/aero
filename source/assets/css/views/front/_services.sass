@@ -1,16 +1,39 @@
 body.index #section-services
   
+  .wrapper
+
+
   article
     display: inline-block
-    margin: 0 0 0 0
-    padding: 0 0 0 0
+    margin: 0 0 0
+    background-color: lighten($yellow, 40%)
+    border-radius: 10px
+    border: solid 2px $gray_blue
+    width: 32%
+    margin-right: 2%
+    height: 100%
+    padding: 0 10px
+    padding-bottom: 10px
     text-align: center
     position: relative
     vertical-align: top
-    width: 33.333%
     +box-sizing( border-box )
-    @media screen and ( max-width: 1279px )
-      width: 50%
+    &:nth-of-type( 3n )
+      margin-right: 0
+
+    h2
+      margin-top: 1em
+      border-bottom: dotted 1px $gray_blue
+
+    p
+      font-style: italic
+      font-weight: 600
+      min-height: 3em
+
+    ul li
+      margin-bottom: 2px
+
+
 
 
 

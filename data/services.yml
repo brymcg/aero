@@ -1,20 +1,21 @@
-- title: Financial Reporting
-  description: 
-- title: ERP Deployment and Integration
-  description: 
-- title: Budgeting and Forecasting
-  description: 
-- title: Data Automation
-  description: 
-- title: Fundraising and Diligence Support
-  description: 
-- title: Custom Application Development
-  description: 
-- title: Accounting Cleanup
-  description: 
-- title: Financial Process Improvement
-  description: 
-- title: Audit Management
-  description: 
-- title: Salesforce Customization
-  description: 
+- group: Basic
+  services:
+    - "Quickbooks setup and management"
+    - "Budgeting, modelling and forecasting"
+    - "Business plan and fundraising"
+    - "Banking and payroll setup"
+  summ: "Let us help you get your business off the ground with some basic infrastructure"
+- group: Intermediate
+  services:
+    - "Accounting cleanup"
+    - "Audit management"
+    - "Automated financial reporting"
+    - "Financial process improvement"
+  summ: "We can help manage growth by cleaning up and streamlining your back office"   
+- group: Advanced
+  services:
+    - "Custom application development"
+    - "Salesforce customization"
+    - "Advanced ERP deployment"
+    - "Analytics and data automation"
+  summ: "Scale your operations and get real insight into your business"
