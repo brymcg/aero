@@ -8,18 +8,20 @@ body > header
   right: 0
   margin: 0
 
+
   .wrapper
     padding: 0 20px
-    height: 40px
     @media only screen and ( max-width: 720px )
       padding-right: 20px
   
   h1
+    vertical-align: middle
     margin: 0
     padding-top: $hd_pad
     padding-bottom: $hd_pad
     color: $dark_blue
     position: absolute
+    top: -2px
     font-size: 2em
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 
@@ -54,6 +56,8 @@ body > header
       padding: 0
       @media only screen and ( max-width: 720px )
         display: block
+      a
+        vertical-align: middle
 
 body.index          > header nav a.home,
 body.about        > header nav a.about,

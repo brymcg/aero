@@ -1,14 +1,14 @@
 body.index #section-services
   
+  h1
+    margin-bottom: 0.25em
+  
   .wrapper
 
 
   article
     display: inline-block
     margin: 0 0 0
-    background-color: lighten($yellow, 40%)
-    border-radius: 10px
-    border: solid 2px $gray_blue
     width: 32%
     margin-right: 2%
     height: 100%
@@ -24,6 +24,11 @@ body.index #section-services
 
     h2
       margin-top: 1em
+      font-weight: 700
+      width: 80%
+      margin-right: 10%
+      margin-left: 10%
+      text-align: center
       border-bottom: dotted 1px $gray_blue
 
     p
@@ -33,6 +38,14 @@ body.index #section-services
 
     ul li
       margin-bottom: 2px
+      padding-right: 1.5em
+
+      &:before
+        font-family: $aero-icons
+        content: $icon-check
+        display: inline-block
+        margin-right: 0.5em
+        color: $yellow
 
 
 
