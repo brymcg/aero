@@ -1,1 +1,1 @@
-!function(e,t){var n=function(e,t,n){var o;return function(){function i(){n||e.apply(r,s),o=null}var r=this,s=arguments;o?clearTimeout(o):n&&e.apply(r,s),o=setTimeout(i,t||100)}};jQuery.fn[t]=function(e){return e?this.bind("resize",n(e)):this.trigger(t)}}(jQuery,"smartresize");
+!function(t,e){var n=function(t,e,n){var o;return function(){function i(){n||t.apply(r,s),o=null}var r=this,s=arguments;o?clearTimeout(o):n&&t.apply(r,s),o=setTimeout(i,e||100)}};jQuery.fn[e]=function(t){return t?this.bind("resize",n(t)):this.trigger(e)}}(jQuery,"smartresize");
